@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Spotify Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      #login, #loggedin, #current_artist, #related_artists {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="login">
+        <h1>Please log in to continue</h1>
+        <a href="/login" id="login_button">Log in with Spotify</a>
+      </div>
+      <div id="loggedin">
+
+          <div id="current_artist">
+            <a id="current_artist_spotify_link" href=''>
+              <img id="current_artist_image" class='artist_image' src="" />
+              <div id="current_artist_name"> </div>
+              <div style="font-size: 10px"> <img src="img.png" height="25px"> See on Spotify </div>
+            </a>
+          </div>
+
+          <div class="search">
+            <div><img src="img.png" height="25px"> Discover new artists ! </div>
+            <div>
+              <input id="searchInput" type="text" placeholder="Search for one of your favorite artists" title="Search">
+              <img id="searchImg" src="search.png" height="30px">
+              </div>
+          </div>
+
+          <div id="related_artists">
+            <div class="title"> Famous related artists </div>
+            <div id="famous_related_artists">
+              <div id = "most_famous_artist_0" class="artist"></div>
+              <div id = "most_famous_artist_1" class="artist"></div>
+              <div id = "most_famous_artist_2" class="artist"></div>
+            </div>
+            <div class="title">And less famous ones </div>
+            <div id="least_famous_related_artists">
+              <div id = "least_famous_artist_0" class="artist"></div>
+              <div id = "least_famous_artist_1" class="artist"></div>
+              <div id = "least_famous_artist_2" class="artist"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
+
