@@ -134,6 +134,7 @@ const searchArtist = function() {
 
 document.querySelector("#searchImg").addEventListener('click',searchArtist);
 
+// To update when you click on a related artist :
 const updateArtist = function(e){
   const artist_position = e.target.id;
   const artist = related_artists[artist_position];
@@ -141,13 +142,11 @@ const updateArtist = function(e){
   document.querySelector("#current_artist_image").src = artist["images"][0]["url"];
   document.querySelector("#current_artist_name").innerHTML = artist["name"];
   document.querySelector("#current_artist_spotify_link").href = "https://open.spotify.com/artist/"+artist["id"];
-
 };
-
 var artist_class = document.getElementsByClassName("artist");
 for (var i = 0; i < artist_class.length; i++) {
     artist_class[i].addEventListener('click', updateArtist);
     artist_class[i].addEventListener('click', browseRelatedArtists);
 };
-
+//
 browseRelatedArtists();
