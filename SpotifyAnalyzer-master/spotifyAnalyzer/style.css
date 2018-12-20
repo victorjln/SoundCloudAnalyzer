@@ -1,0 +1,22 @@
+body {
+  background-color: #2B2B2B;
+  margin-top:20%;
+  text-align : center;
+  color : white; 
+  font-family: Verdana,sans-serif ;
+  font-size : 30px;
+}
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.search{
+	margin-left: 10%;
+  margin-right:10%;
+	background-color : rgba(255,255,255,0.1);
+}
