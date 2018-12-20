@@ -1,0 +1,165 @@
+body {
+  background-color: #2B2B2B;
+  background-image : url("img.png");
+  color : white; 
+  font-family: Verdana,sans-serif ;
+  font-size : 30px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+h1{
+font-size: 15px;}
+#login{
+  text-align: center;
+	padding-left: 10%;
+  padding-right:10%;
+	position: absolute;
+	padding-bottom:10px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
+	background-color : rgba(25,25,25,0.5);
+	border-radius : 16px;}
+/*
+ * Current artist
+ */
+
+#current_artist{
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  margin : 30px;
+  padding-top:15px;
+  text-align: center;
+	padding-left: 10%;
+  padding-right:10%;
+	position: absolute;
+	padding-bottom:50px;
+	
+	top: 50%;
+	left: 25%;
+	-ms-transform: translate(-50%, -30%);
+	transform: translate(-50%, -50%);
+	
+	background-color : rgba(25,25,25,0.5);
+	border-radius : 16px;
+}
+
+/*
+ * Input section
+ */
+input[type=text], select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 350px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.search{
+	
+  	text-align: center;
+	padding-left: 10%;
+ 	padding-right:10%;
+	position: absolute;
+	padding-bottom:10px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color : rgba(25,25,25,0.5);
+	border-radius : 16px;
+	
+}
+
+
+
+#searchImg{
+	position: relative;
+	top:7px;
+}
+
+#searchImg :hover{
+	transform: scale(1.1,1.1);
+}
+
+/*
+ * Related artists
+ */
+.title{
+  text-align : center;
+  display: flex;
+	padding-bottom:50px;
+	margin-left: 80px;
+	transform: translate(53%,250%);
+}
+#famous_related_artists,#least_famous_related_artists{
+  
+  text-align : center;
+  display: flex;
+  top: 50%;
+	
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(55%, 135%);
+	
+	
+}
+
+.artist{
+  width: 100px;
+  height: 100px;
+  font-size: 15px;
+  margin : 15px;
+}
+
+.related_artists #title{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.artist img, #current_artist_image{
+  width: 80%;
+  height: 80%;
+}
+
+@media (max-width: 768px) {
+input[type=text], select {
+  width: 200px;
+}
+#current_artist{
+display: flex;
+transform: translate(-23%,-45%);
+padding-left:0;
+padding-right:0;
+}
+#related_artists{
+display: flex;
+transform: translate(-55%,55%);
+padding-left:0;
+padding-right:0;
+margin-bottom: 120px;
+}
+.title{
+transform: translate(53%,190%);
+}
+}
+
+@keyframes fadeInUp{
+    from {
+        transform: translate3d(-50%, -100%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 1;
+    }
+}
